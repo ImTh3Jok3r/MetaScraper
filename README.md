@@ -49,3 +49,11 @@ Here is a [short guide](https://support.google.com/cloud/answer/6158862?hl=en) t
 #### You're ready to go!
 
 I put my API key and CSE cv code into a simple text file called `API_Key.txt` and `SE_Code.txt` in the same folder as the python file so that they could be read and used in the program and I could just .gitignore them and not share my precious keys (honestly I could probably share the CSE, but for the sake of saying I'm paranoid?).
+
+# Some notes:
+
+Currently the data output is difficult to parse through and honestly looks like a blob. That will be changing as new iterations of the code are completed, but this tool is AS-IS for now.
+
+Also, there will be some errors when downloading PDFs, this is due to the `URLLIB` library and how it handles links/connections - this will be getting addressed in the future, as well, when I can diagnose what is causing the errors in redirects or how the file is handled. The downloads that fail will output their link into an `Errors.txt` file so that you can get the information by hand, if need be. Yes, I said no "HandJamming," but come on this is a few files instead of 100.
+
+There is also an issue of some of the PDFs either not downloading properly or being encrypted (OR BOTH **_dun dun dun_**). This information will be displayed so you know which files this occurs with.
